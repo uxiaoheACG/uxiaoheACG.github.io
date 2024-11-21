@@ -1,0 +1,34 @@
+
+#创建一个类a，然后再创建一个继承类，继承类a
+class father :
+  name_id = 11001
+  cpu = "ASA2021"
+  face =[12.7,9.6]
+
+  subit_a = True
+  __cpu_open = True
+  __face_open = False
+  def __iphone_massage(self):
+    print(f"手机序列是：{self.name_id}手机cpu的编号为{self.cpu}手机尺寸为{self.face[0]}*{self.face[1]}cpu超频已打开，屏幕高刷已关闭")
+  
+  def discover_phone(self):
+    self.__iphone_massage()
+
+class jicheng(father):
+  name_id = 11002
+  cpu = "ASB2024"
+  face =[13.4,10]
+
+phone = jicheng()
+phone.discover_phone()
+class a:
+  __name = "www"
+
+class b(a):
+  def aaa(self):
+    print(self.__name)
+c=b()
+# c.aaa()
+
+num : int = 100.1
+print(type(num))
